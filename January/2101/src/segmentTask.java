@@ -51,7 +51,7 @@ class Cut{
 
     }
 }
-public class purva {
+public class segmentTask {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         Scanner str = new Scanner(System.in);

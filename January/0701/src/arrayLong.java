@@ -1,4 +1,4 @@
-public class purva {
+public class arrayLong {
     public static void arrayPrint(double[] data, int n) {
         for (int i = 0; i < n; i++) {
             System.out.print(data[i]);
@@ -77,14 +77,14 @@ public class purva {
         return subarr;
     }
 
-    public static double arrayMax(double[] data, int n){
+    public static double arrayMax(double[] data, int n) {
         double max = data[0];
-        for(int i = 1; i < n; i++){
+        for (int i = 1; i < n; i++) {
             max = Math.max(max, data[i]);
         }
         return max;
 
-
+    }
     public static void main(String[] args){
         double[] arr = {1, 2, 3, 4, 5, 6, 7};
         arrayPrint(arr, 7);

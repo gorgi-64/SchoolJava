@@ -41,7 +41,7 @@ class Rational{
     }
 
 }
-public class purva {
+public class RationalCalc {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         Rational one = new Rational(input.nextInt(), input.nextInt());

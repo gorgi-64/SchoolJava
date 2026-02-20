@@ -33,7 +33,7 @@ class triangle{
         return a + b + c;
     }
 }
-public class purva {
+public class triforce {
     public static void task(triangle first){
         first.printSides();
         System.out.println(first.getPerimeter());

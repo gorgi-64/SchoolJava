@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class treta {
+public class arraySimple {
     public static boolean simple(int a){
         if(a == 1) return false;
         if(a == 2) return true;

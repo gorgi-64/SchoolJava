@@ -1,5 +1,4 @@
-import java.util.Scanner;
-public class vtora {
+public class pressF {
     public static int[] press(int[] ArrA, int n){
         int[] ArrB = new int[n - 1];
         for(int i = 0; i < n - 1; i++){

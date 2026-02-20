@@ -14,7 +14,7 @@ class slujitel{
         return salary;
     }
 }
-public class purva {
+public class slujitel2 {
     public static int arrayAboveAverage(slujitel[] data, int n){
         double average = arrayAverage(data, n);
         int counter = 0;

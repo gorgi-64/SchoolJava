@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class vtora {
+public class slujiteli {
     public static int F(int x){
         return (int)(Math.pow(x, 2) + (5 * x) - 1);
     }
@@ -30,6 +30,6 @@ public class vtora {
             y[x - A] = F(x);
         }
         arrayPrint(y, (B - A + 1));
-        System.out.println("\n" + marrayIncreasing(y, (B - A + 1)));
+        System.out.println("\n" + arrayIncreasing(y, (B - A + 1)));
     }
 }

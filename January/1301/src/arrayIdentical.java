@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class purva {
+public class arrayIdentical {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         Scanner str = new Scanner(System.in);

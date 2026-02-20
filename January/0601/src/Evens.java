@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class vtora {
+public class Evens {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int B = input.nextInt();
