@@ -20,7 +20,7 @@ class Barrel{
 }
 
 
-public class purva {
+public class BarrelTask {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int d1 = input.nextInt();

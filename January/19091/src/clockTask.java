@@ -54,7 +54,7 @@ class Clock{
         }
 
 }
-public class purva {
+public class clockTask {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         Clock first =new Clock(input.nextInt(), input.nextInt(), input.nextInt());
