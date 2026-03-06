@@ -1,7 +1,11 @@
-import java.sql.Time;
 import java.util.Arrays;
 import java.util.Comparator;
-public class Car{
+interface Sortable {
+    Comparator<? extends Sortable> getComparator();
+    void printName();
+    Sortable create();
+}
+public class Car implements Sortable{
     String model;
     int year;
     int maxSpeed;
@@ -13,14 +17,38 @@ public class Car{
             return car.model.compareTo(t1.model);
         }
     };
+    @Override
+    @SuppressWarnings("all")
+    public Sortable create() {
+        return new Car(Main.str.nextLine(), Main.input.nextInt(), Main.input.nextInt());
+    }
+
     public Car(String model, int year, int maxSpeed){
         this.model = model;
         this.year = year;
         this.maxSpeed = maxSpeed;
 
     }
+    public Comparator<Car> getComparator(){
+        return comparatorCar;
+    }
+    public void printName(){
+        System.out.println(model);
+    }
+
+    public static void main(String[] args) {
+        int choiceTask = Main.input.nextInt();
+        if(choiceTask == 1){
+            Car[] arr = new Car[Main.input.nextInt()];
+            Main17.does(arr, Car.comparatorCar);
+        }
+        else{
+            Mother[] arr = new Mother[Main.input.nextInt()];
+            Main17.does(arr, Mother.comparatorMother);
+        }
+    }
 }
-class Mother{
+class Mother implements Sortable{
     String name;
     int age;
     int kids;
@@ -39,4 +67,24 @@ class Mother{
             return one.name.compareTo(two.name);
         }
     };
+    @Override
+    @SuppressWarnings("all")
+    public Sortable create() {
+        return new Mother(Main.str.nextLine(), Main.input.nextInt(), Main.input.nextInt());
+    }
+    public Comparator<Mother> getComparator(){
+        return comparatorMother;
+    }
+    public void printName(){
+        System.out.println(name);
+    }
+}
+class Main17{
+    public static <T extends Sortable> void does(T[] arr, Comparator<T> comparator){
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = (T) arr[i].create();
+        }
+        Arrays.sort(arr, comparator);
+        for(T that : arr) that.printName();
+    }
 }
