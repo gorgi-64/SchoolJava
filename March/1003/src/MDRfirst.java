@@ -1,4 +1,4 @@
-import java.nio.file.LinkPermission;
+import java.util.Arrays;
 import java.util.Scanner;
 public class MDRfirst {
     public static int matrixSorP(int[][] matrix, int mode){
@@ -61,5 +61,6 @@ public class MDRfirst {
             System.out.print(arr[i][i] + " ");
             diagonalSum += arr[i][i];
         }
+        System.out.println(Arrays.toString(rowSums) + " " + diagonalSum);
     }
 }
