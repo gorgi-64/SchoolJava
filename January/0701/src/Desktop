@@ -1,4 +1,4 @@
-public class purva {
+public class unknown {
     public static void arrayPrint(double[] data, int n) {
         for (int i = 0; i < n; i++) {
             System.out.print(data[i]);

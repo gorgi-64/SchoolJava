@@ -13,7 +13,7 @@ public class ArraysPractice {
         }
         return arr;
     }
-    public int sum(int[] arr){
+    public static int sum(int[] arr){
         int sum = 0;
         for(int i : arr) sum += i;
         return sum;
@@ -37,7 +37,7 @@ public class ArraysPractice {
         }
         return index;
     }
-    public int maxIndex(int[] arr){
+    public static int maxIndex(int[] arr){
         int index = 0;
         for(int i = 1; i < arr.length; i++){
             index = ((arr[i] > arr[index]) ? i : index);
