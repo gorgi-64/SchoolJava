@@ -1,5 +1,4 @@
 import java.util.Scanner;
-@SuppressWarnings("unused")
 public class ArraysPractice {
     public static Scanner input = new Scanner(System.in);
     public static void print(int[] arr){
@@ -45,7 +44,6 @@ public class ArraysPractice {
         }
         return index;
     }
-
     public int min(int[] arr){ return arr[minIndex(arr)];}
     public int max(int[] arr){ return arr[maxIndex(arr)];}
     public int find(int[] arr, int search){

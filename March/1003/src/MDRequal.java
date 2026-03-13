@@ -1,8 +1,9 @@
+import java.util.Scanner;
 public class MDRequal {
     public static boolean matrixEqual(int[][] matrix){
-        for (int[] ints : matrix) {
-            for (int j = 1; j < ints.length; j++) {
-                if (ints[j] != matrix[0][0]) return false;
+        for(int i = 0; i < matrix.length; i++){
+            for(int j = 1; j < matrix[i].length; j++){
+                if(matrix[i][j] != matrix[0][0]) return false;
             }
         }
         return true;
