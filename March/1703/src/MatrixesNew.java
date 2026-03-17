@@ -1,3 +1,4 @@
+@SuppressWarnings("all")
 public class MatrixesNew {
     public static int[][] read(int[][] matrix, int m, int n){
         return MDRfirst.fillMatrix(m, n);

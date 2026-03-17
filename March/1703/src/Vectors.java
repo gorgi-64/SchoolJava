@@ -32,6 +32,7 @@ class Vector extends Polynomial{
     }
 
     // Removes row and column i,j to produce the minor matrix
+    @SuppressWarnings("all")
     private static double[][] subMatrix(double[][] matrix, int excludeRow, int excludeCol) {
         int n = matrix.length;
         double[][] sub = new double[n - 1][n - 1];
