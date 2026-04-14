@@ -33,9 +33,9 @@ public class Otsechka {
     public point getOne(){ return one; }
     public point getTwo(){ return two; }
     public double getLength(){ return length; }
-    public static Comparator<Otsechka> byUslovie = new Comparator<Otsechka>() {
+   /* public static Comparator<Segmemt> byUslovie = new Comparator<Segmemt>() {
         @Override
-        public int compare(Otsechka otsechka, Otsechka t1) {
+        public int compare(Segmemt otsechka, Segmemt t1) {
             if(point.byX.compare(otsechka.one, t1.one) == 0){
                 if(point.byX.compare(otsechka.two, t1.two) == 0){
                     return Double.compare(otsechka.length, t1.length);
@@ -45,7 +45,7 @@ public class Otsechka {
             else return point.byX.compare(otsechka.one, t1.one);
         }
     };
-
+*/
 
     public static void main(String[] args) {
 

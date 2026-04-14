@@ -1,7 +1,6 @@
-import javax.smartcardio.Card;
 import java.util.ArrayList;
 import java.util.Scanner;
-
+@SuppressWarnings("all")
 public class BannedWords {
     public static ArrayList<String> splitRecursive(ArrayList<String> arr, String str, char delimiter){
         if(str.indexOf(delimiter) == -1){
